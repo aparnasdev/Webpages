@@ -1,0 +1,37 @@
+body{
+	background: #ddeeff;
+	font-size: 140%;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+img{
+	margin: 1%;
+	border: 5px solid #0011dd;
+	border-radius: 5%;
+}
+
+.type1{
+	height: 200px;
+}
+
+.type0{
+	height: 250px;
+}
+
+.type2{
+	height: 200px;
+}
+
+table{
+	margin-right: 10%;
+	width: 40%;
+	border: 5px solid white; 
+	background-color: #23459a;
+	float: right;
+}
+
+td{
+	color: #ffffff;
+	padding: 1%;
+}

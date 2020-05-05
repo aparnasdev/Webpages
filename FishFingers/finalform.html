@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Food Delivery</title>
+	<link rel="stylesheet" type="text/css" href="formstyle.css">
+	<script type="text/javascript" src="formfunction.js"></script>
+</head>
+<body>
+	<!--Header section-->
+	<h1 id="heading">FishFingers</h1>
+	<h2 id="sub">Fresh.Delivered</h2>
+	<h3>Online Ordering Form</h3>
+	<p>Delivery Details</p>
+	<form>
+		<table id="formtable">
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="fname" id="fname" onblur="validfirstname()"><span id="fnamespan"></span></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lname" id="lname" onblur="validlastname()"><span id="lnamespan"></span></td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="Address"></td>
+			</tr>
+			<tr>
+				<td>Pin</td>
+				<td><input type="number" name="Pin" id="pin" onblur="validpin()"><span id="pinspan"></span></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="number" name="Phone" onblur="validphone()" id="ph"><span id="phspan"></span></td>
+			</tr>
+			<tr>
+				<td>Select item</td>
+				<td>
+					Sandwich<input type="radio" name="Food" value="Sandwich" checked><br>
+					Burger<input type="radio" name="Food" value="Burger"><br>
+					Pizza<input type="radio" name="Food" value="Pizza"><br>
+					Pasta<input type="radio" name="Food" value="Pasta">
+				</td>
+			</tr>
+			<tr>
+				<td>Quantity</td>
+				<td><input type="number" name="Quantity" value="1"></td>
+			</tr>
+		</table>
+		Would you like fries with that?<input type="checkbox" name="fries"><br>
+		<button type="Deliver" onclick="next()">Click here to deliver</button>
+	</form>
+</body>
+</html>
